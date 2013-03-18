@@ -68,9 +68,6 @@ C:\Users\Ben\Desktop\WordFlip\WordFlip\WordFlip\bin\Debug\infl
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\infl
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\WordFlip.exe
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\WordFlip.pdb
-E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\resources.pri
-E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\AppxManifest.xml
-E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\WordFlip.build.appxrecipe
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\App.g.i.cs
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\App.g.cs
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\AboutPage.g.i.cs
@@ -83,12 +80,15 @@ E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\ResultPage.g.cs
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\XamlTypeInfo.g.cs
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\App.xaml
-E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\Common\StandardStyles.xaml
-E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\ResultPage.xaml
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\AboutPage.xaml
+E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\Common\StandardStyles.xaml
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\MainPage.xaml
+E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\ResultPage.xaml
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\WordFlip.exe
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\WordFlip.pdb
+E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\resources.pri
+E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\AppxManifest.xml
+E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\WordFlip.build.appxrecipe
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\priconfig.xml.intermediate
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\layout.resfiles.intermediate
 E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\obj\Debug\resources.resfiles.intermediate

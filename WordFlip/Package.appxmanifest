@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="60978Catalyst.WordFlip" Publisher="CN=EC658FD8-825A-4047-840B-C29089AF8667" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>WordFlip</DisplayName>
+    <PublisherDisplayName>Catalyst</PublisherDisplayName>
+    <Logo>logo4.jpg</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="WordFlip.App">
+      <VisualElements DisplayName="WordFlip" Logo="logo2.jpg" SmallLogo="logo3.jpg" Description="An app that attempts to use the letters in a word to find other words" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="logoOnly" ShortName="WordFlip" />
+        <SplashScreen Image="logowide.jpg" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

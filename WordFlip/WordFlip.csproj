@@ -129,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Common\ReadMe.txt" />
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
   </ItemGroup>
   <ItemGroup>
     <Content Include="infl">

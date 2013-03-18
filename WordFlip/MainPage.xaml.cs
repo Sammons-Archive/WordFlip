@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -18,21 +12,22 @@ using Windows.UI.Xaml.Navigation;
 namespace WordFlip
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    ///     An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
-
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
 
         /// <summary>
-        /// Invoked when this page is about to be displayed in a Frame.
+        ///     Invoked when this page is about to be displayed in a Frame.
         /// </summary>
-        /// <param name="e">Event data that describes how this page was reached.  The Parameter
-        /// property is typically used to configure the page.</param>
+        /// <param name="e">
+        ///     Event data that describes how this page was reached.  The Parameter
+        ///     property is typically used to configure the page.
+        /// </param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             EntryBox.MaxLength = 10;
@@ -42,8 +37,10 @@ namespace WordFlip
         {
             if (EntryBox.Text.Length > 2)
             {
-                var entry = EntryBox.Text;
-                foreach (var block in BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != Warning))
+                string entry = EntryBox.Text;
+                foreach (
+                    TextBlock block in
+                        BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != Warning))
                 {
                     block.Text = entry;
                 }
@@ -51,11 +48,13 @@ namespace WordFlip
             }
             else
             {
-               const string wordFlip = "Word Flip";
-               foreach (var block in BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != Warning))
-               {
-                   block.Text = wordFlip;
-               }
+                const string wordFlip = "Word Flip";
+                foreach (
+                    TextBlock block in
+                        BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != Warning))
+                {
+                    block.Text = wordFlip;
+                }
                 Warning.Text = "Please enter a longer word";
             }
         }
@@ -65,21 +64,20 @@ namespace WordFlip
             resultTextBox.Text = text;
         }
 
-        private async void GetResults(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        private async void GetResults(object sender, TappedRoutedEventArgs e)
         {
             // TODO: Add event handler implementation here.
             if (EntryBox.Text == "Loading") return;
             SetResultTextBoxText("Loading");
-            var txt = EntryBox.Text;
-            var words = await Task.Run(() => WordFinder.GetPerms(txt));
-           Frame.Navigate(typeof (ResultPage),words);
+            string txt = EntryBox.Text;
+            List<string> words = await Task.Run(() => WordFinder.GetPerms(txt));
+            Frame.Navigate(typeof (ResultPage), words);
             SetResultTextBoxText("Result Page");
         }
 
         private void ToAboutPage(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AboutPage));
+            Frame.Navigate(typeof (AboutPage));
         }
-
     }
 }

@@ -12,29 +12,29 @@
                     Styles that define common aspects of the platform look and feel
                     Required by Visual Studio project and item templates
                  -->
-                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+                <ResourceDictionary Source="Common/StandardStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
-        	<Style x:Key="EntryBox" TargetType="TextBox">
-        		<Setter Property="Template">
-        			<Setter.Value>
-        				<ControlTemplate TargetType="TextBox">
-        					<Grid>
-        						<VisualStateManager.VisualStateGroups>
-        							<VisualStateGroup x:Name="CommonStates">
-        								<VisualState x:Name="PointerOver"/>
-        								<VisualState x:Name="Focused"/>
-        								<VisualState x:Name="Disabled"/>
-        							</VisualStateGroup>
-        							<VisualStateGroup x:Name="ButtonStates">
-        								<VisualState x:Name="ButtonCollapsed"/>
-        							</VisualStateGroup>
-        						</VisualStateManager.VisualStateGroups>
-        						<Rectangle Fill="#FFFDFDFD" Stroke="Black"/>
-        					</Grid>
-        				</ControlTemplate>
-        			</Setter.Value>
-        		</Setter>
-        	</Style>
+            <Style x:Key="EntryBox" TargetType="TextBox">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="TextBox">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="PointerOver" />
+                                        <VisualState x:Name="Focused" />
+                                        <VisualState x:Name="Disabled" />
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="ButtonStates">
+                                        <VisualState x:Name="ButtonCollapsed" />
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Rectangle Fill="#FFFDFDFD" Stroke="Black" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
 
         </ResourceDictionary>
     </Application.Resources>
