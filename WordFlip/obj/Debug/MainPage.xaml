@@ -7,10 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="EntirePageGrid" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Viewbox x:Name="BackgroundView" Margin="-100,278,102,172">
             <Grid x:Name="BackgroundGrid" Height="599.664016723633" Width="2011.7869720459">
-                <TextBlock x:Name="Back4" HorizontalAlignment="Left" Height="133.343" Margin="278.96,38.475,0,0"
+                <TextBlock x:Name="BackText7" HorizontalAlignment="Left" Height="133.343" Margin="278.96,38.475,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.787" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -25,7 +25,7 @@
                                             ScaleY="1.025" ScaleX="0.976" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back5" HorizontalAlignment="Left" Height="139.509" Margin="328.907,124.003,0,0"
+                <TextBlock x:Name="BackText6" HorizontalAlignment="Left" Height="139.509" Margin="328.907,124.003,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.788" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -40,7 +40,7 @@
                                             SkewY="3.878" ScaleX="-0.976" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back3" HorizontalAlignment="Left" Height="133.344" Margin="824.812,0,0,0"
+                <TextBlock x:Name="BackText5" HorizontalAlignment="Left" Height="133.344" Margin="824.812,0,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.787" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -55,7 +55,7 @@
                                             ScaleY="1.023" ScaleX="0.978" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back2" HorizontalAlignment="Left" Height="139.509" Margin="904.463,111.653,0,0"
+                <TextBlock x:Name="BackText4" HorizontalAlignment="Left" Height="139.509" Margin="904.463,111.653,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.788" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -70,7 +70,7 @@
                                             SkewX="3.896" ScaleX="0.978" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back1" HorizontalAlignment="Left" Height="133.343" Margin="1104,97.321,0,0"
+                <TextBlock x:Name="BackText3" HorizontalAlignment="Left" Height="133.343" Margin="1104,97.321,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.787" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -85,7 +85,7 @@
                                             ScaleY="1.075" ScaleX="0.93" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back6" HorizontalAlignment="Left" Height="135.988" Margin="14.9,100.537,0,0"
+                <TextBlock x:Name="BackText2" HorizontalAlignment="Left" Height="135.988" Margin="14.9,100.537,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.787" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -100,7 +100,7 @@
                                             SkewX="-0.001" ScaleX="0.93" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back1_Copy" HorizontalAlignment="Left" Height="133.343" Margin="975,436.321,0,0"
+                <TextBlock x:Name="BackText1" HorizontalAlignment="Left" Height="133.343" Margin="975,436.321,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.787" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -115,7 +115,7 @@
                                             ScaleY="1.075" ScaleX="0.93" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back1_Copy1" HorizontalAlignment="Left" Height="133.343" Margin="0,466.321,0,0"
+                <TextBlock x:Name="BackText8" HorizontalAlignment="Left" Height="133.343" Margin="0,466.321,0,0"
                            TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top" Width="907.787" FontSize="96"
                            RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                     <TextBlock.Foreground>
@@ -130,7 +130,7 @@
                                             ScaleY="1.075" ScaleX="0.93" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back1_Copy2" HorizontalAlignment="Left" Height="141.781"
+                <TextBlock x:Name="BackText9" HorizontalAlignment="Left" Height="141.781"
                            Margin="393.757,378.102,0,0" TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top"
                            Width="966.273" FontSize="96" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False"
                            d:LayoutRounding="Auto">
@@ -146,7 +146,7 @@
                                             ScaleY="-1.075" ScaleX="0.93" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <TextBlock x:Name="Back1_Copy3" HorizontalAlignment="Left" Height="141.781"
+                <TextBlock x:Name="BackText10" HorizontalAlignment="Left" Height="141.781"
                            Margin="879.757,264.102,0,0" TextWrapping="Wrap" Text="Word Flip" VerticalAlignment="Top"
                            Width="966.273" FontSize="96" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False"
                            d:LayoutRounding="Auto">
@@ -162,8 +162,8 @@
                                             ScaleY="-1.075" ScaleX="0.93" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
-                <Grid x:Name="AboutGrid_2" Margin="1941,604,-96,-220">
-                    <Path Data="M150,608.333 C274.444,588.333 336.667,639.444 276.667,588.333" Fill="#FF850000"
+                <Grid x:Name="AboutPageGrid" Margin="1941,604,-96,-220">
+                    <Path x:Name="RedArmPath" Data="M150,608.333 C274.444,588.333 336.667,639.444 276.667,588.333" Fill="#FF850000"
                           HorizontalAlignment="Left" Height="24.543" Stretch="Fill" Stroke="Black"
                           UseLayoutRounding="False" VerticalAlignment="Top" Width="150.736"
                           RenderTransformOrigin="0.5,0.5">
@@ -171,7 +171,7 @@
                             <CompositeTransform Rotation="132.503" TranslateX="21.277" TranslateY="48.359" />
                         </Path.RenderTransform>
                     </Path>
-                    <Path Data="M150,608.333 C274.444,588.333 336.667,639.444 276.667,588.333" Fill="#FF1700FF"
+                    <Path x:Name="BlueArmPath" Data="M150,608.333 C274.444,588.333 336.667,639.444 276.667,588.333" Fill="#FF1700FF"
                           HorizontalAlignment="Left" Height="19.358" Margin="80.526,12.89,0,0" Stretch="Fill"
                           Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" Width="68.728"
                           RenderTransformOrigin="0.5,0.5">
@@ -179,7 +179,7 @@
                             <CompositeTransform Rotation="117.872" TranslateX="-52.538" TranslateY="60.242" />
                         </Path.RenderTransform>
                     </Path>
-                    <Path Data="M150,608.333 C274.444,588.333 336.667,639.444 276.667,588.333" Fill="#FF294F4F"
+                    <Path x:Name="GreenArmPath" Data="M150,608.333 C274.444,588.333 336.667,639.444 276.667,588.333" Fill="#FF294F4F"
                           HorizontalAlignment="Left" Height="19.358" Margin="89.788,38.076,0,0" Stretch="Fill"
                           Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" Width="68.728"
                           RenderTransformOrigin="0.5,0.5">
@@ -187,22 +187,22 @@
                             <CompositeTransform Rotation="73.088" TranslateX="-86.627" TranslateY="24.867" />
                         </Path.RenderTransform>
                     </Path>
-                    <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,151,0,0" TextWrapping="Wrap"
+                    <TextBlock x:Name="AboutText" HorizontalAlignment="Left" Height="26" Margin="10,151,0,0" TextWrapping="Wrap"
                                Text="About Word Flip" VerticalAlignment="Top" Width="151" FontSize="16"
                                Foreground="#FFC1AFAF" />
-                    <Button x:ConnectionId='3' x:Name="aboutBtn" Content="" HorizontalAlignment="Left" Height="219" Margin="-21,10,0,-13"
+                    <Button x:ConnectionId='3' x:Name="AboutButton" Content="" HorizontalAlignment="Left" Height="219" Margin="-21,10,0,-13"
                             VerticalAlignment="Top" Width="175"                     ClickMode="Press" Opacity="0" />
                 </Grid>
-                <Grid Margin="790,-181,379,319">
+                <Grid x:Name="EntryBoxGrid" Margin="790,-181,379,319">
                     <TextBox x:ConnectionId='1' x:Name="EntryBox" HorizontalAlignment="Left" Height="110" Margin="104,244,0,0"
                              TextWrapping="Wrap" VerticalAlignment="Top" Width="408" FontSize="64" Text="Enter Here"
                                                              />
-                    <TextBlock HorizontalAlignment="Left" Height="70" Margin="241,0,0,0" TextWrapping="Wrap"
+                    <TextBlock x:Name="PageTitleText" HorizontalAlignment="Left" Height="70" Margin="241,0,0,0" TextWrapping="Wrap"
                                Text="Word Flip!" VerticalAlignment="Top" Width="302" FontSize="48" />
-                    <TextBlock HorizontalAlignment="Left" Height="20" Margin="0,76,0,0" TextWrapping="Wrap"
+                    <TextBlock x:Name="InstructionsText" HorizontalAlignment="Left" Height="20" Margin="0,76,0,0" TextWrapping="Wrap"
                                Text="Enter a word (names work too!) and find out what else can be spelled with it's letters:"
                                VerticalAlignment="Top" Width="843" FontSize="16" />
-                    <TextBlock HorizontalAlignment="Left" Height="41" Margin="0,96,0,0" TextWrapping="Wrap"
+                    <TextBlock x:Name="ExampleText" HorizontalAlignment="Left" Height="41" Margin="0,96,0,0" TextWrapping="Wrap"
                                VerticalAlignment="Top" Width="250" Foreground="#FFB69595">
                         <Run Text="Example: Enter " />
                         <Run Text="meat " />
@@ -210,12 +210,12 @@
                         <Run Text="mate " />
                         <Run Text="Some words do not have letter-cousins" />
                     </TextBlock>
-                    <TextBlock x:Name="Warning" HorizontalAlignment="Left" Height="30" Margin="18,380,0,0"
+                    <TextBlock x:Name="WarningText" HorizontalAlignment="Left" Height="30" Margin="18,380,0,0"
                                TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="18" />
-                    <TextBlock x:Name="resultTextBox" HorizontalAlignment="Left" Height="40" Margin="231,459,0,-37"
+                    <TextBlock x:Name="ResultBoxText" HorizontalAlignment="Left" Height="40" Margin="231,459,0,-37"
                                TextWrapping="Wrap" Text="Result Page" VerticalAlignment="Top" Width="183" FontSize="24"
                                Foreground="White" FontWeight="Bold" />
-                    <Rectangle x:ConnectionId='2' Fill="#FF060000" HorizontalAlignment="Left" Height="82" Margin="144,435,0,-55"
+                    <Rectangle x:ConnectionId='2' x:Name="ResultButton" Fill="#FF060000" HorizontalAlignment="Left" Height="82" Margin="144,435,0,-55"
                                Stroke="Black" VerticalAlignment="Top" Width="336" Opacity="0.6"                     />
 
                 </Grid>

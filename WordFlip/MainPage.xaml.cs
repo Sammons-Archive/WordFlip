@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Windows.System;
+using Windows.UI.ApplicationSettings;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
@@ -16,11 +19,12 @@ namespace WordFlip
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent();          
         }
-
+        
         /// <summary>
         ///     Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -40,28 +44,28 @@ namespace WordFlip
                 string entry = EntryBox.Text;
                 foreach (
                     TextBlock block in
-                        BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != Warning))
+                        BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != WarningText))
                 {
                     block.Text = entry;
                 }
-                Warning.Text = "";
+                WarningText.Text = "";
             }
             else
             {
                 const string wordFlip = "Word Flip";
                 foreach (
                     TextBlock block in
-                        BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != Warning))
+                        BackgroundGrid.Children.ToArray().OfType<TextBlock>().Where(block => block != WarningText))
                 {
                     block.Text = wordFlip;
                 }
-                Warning.Text = "Please enter a longer word";
+                WarningText.Text = "Please enter a longer word";
             }
         }
 
         private void SetResultTextBoxText(String text)
         {
-            resultTextBox.Text = text;
+            ResultBoxText.Text = text;
         }
 
         private async void GetResults(object sender, TappedRoutedEventArgs e)

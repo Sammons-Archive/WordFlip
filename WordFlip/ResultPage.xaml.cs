@@ -31,31 +31,34 @@ namespace WordFlip
         /// </param>
         protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
-            string[] words = ((List<string>) navigationParameter).ToArray();
-            Array.Resize(ref words, 5);
-            const string none = "";
-            if (words[0] != null) LeftText1.Text = RightText1.Text = "1 " + words[0];
-            else LeftText1.Text = RightText1.Text = none;
-            if (words[1] != null) LeftText2.Text = RightText2.Text = "2 " + words[1];
-            else LeftText2.Text = RightText2.Text = none;
-            if (words[2] != null) LeftText3.Text = RightText3.Text = "3 " + words[2];
-            else LeftText3.Text = RightText3.Text = none;
-            if (words[3] != null) LeftText4.Text = RightText4.Text = "4 " + words[3];
-            else LeftText4.Text = RightText4.Text = none;
-            if (words[4] != null) LeftText5.Text = RightText5.Text = "5 " + words[4];
-            else LeftText5.Text = RightText5.Text = none;
-            if (words[0] == null)
+            if (navigationParameter != null)
             {
-                LeftText1.Text =
-                    RightText1.Text =
-                    LeftText2.Text =
-                    RightText2.Text =
-                    LeftText3.Text =
-                    RightText3.Text =
-                    LeftText4.Text =
-                    RightText4.Text =
-                    LeftText5.Text =
-                    RightText5.Text = "Nothing found";
+                string[] words = ((List<string>) navigationParameter).ToArray();
+                Array.Resize(ref words, 5);
+                const string none = "";
+                if (words[0] != null) LeftText1.Text = RightText1.Text = "1 " + words[0];
+                else LeftText1.Text = RightText1.Text = none;
+                if (words[1] != null) LeftText2.Text = RightText2.Text = "2 " + words[1];
+                else LeftText2.Text = RightText2.Text = none;
+                if (words[2] != null) LeftText3.Text = RightText3.Text = "3 " + words[2];
+                else LeftText3.Text = RightText3.Text = none;
+                if (words[3] != null) LeftText4.Text = RightText4.Text = "4 " + words[3];
+                else LeftText4.Text = RightText4.Text = none;
+                if (words[4] != null) LeftText5.Text = RightText5.Text = "5 " + words[4];
+                else LeftText5.Text = RightText5.Text = none;
+                if (words[0] == null)
+                {
+                    LeftText1.Text =
+                        RightText1.Text =
+                        LeftText2.Text =
+                        RightText2.Text =
+                        LeftText3.Text =
+                        RightText3.Text =
+                        LeftText4.Text =
+                        RightText4.Text =
+                        LeftText5.Text =
+                        RightText5.Text = "Nothing found";
+                }
             }
         }
 

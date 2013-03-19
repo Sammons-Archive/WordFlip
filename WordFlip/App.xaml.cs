@@ -1,6 +1,8 @@
 ﻿using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.UI.ApplicationSettings;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -54,13 +56,21 @@ namespace WordFlip
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof (MainPage), args.Arguments))
-                {
-                    throw new Exception("Failed to create initial page");
+                rootFrame.Navigate(typeof (MainPage), args.Arguments);
                 }
-            }
             // Ensure the current window is active
             Window.Current.Activate();
+           SettingsPane.GetForCurrentView().CommandsRequested += OnCommandsRequested;
+        }
+
+        private void OnCommandsRequested(SettingsPane sender, SettingsPaneCommandsRequestedEventArgs args)
+        {
+            args.Request.ApplicationCommands.Add(new SettingsCommand("privacypolicy", "Privacy policy", OpenPrivacyPolicy));
+        }
+        private async void OpenPrivacyPolicy(IUICommand command)
+        {
+            var rootFrame = Window.Current.Content as Frame;
+            if (rootFrame != null) rootFrame.Navigate(typeof(PrivacyPolicy));
         }
 
         /// <summary>

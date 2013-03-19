@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="WordFlip.App">
-      <VisualElements DisplayName="WordFlip" Logo="logo2.jpg" SmallLogo="logo3.jpg" Description="An app that attempts to use the letters in a word to find other words" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="WordFlip" Logo="logo2.jpg" SmallLogo="logo3.jpg" Description="An app that attempts to use the letters in a word to find other words. Use this under the table while playing word games for a mean advantage." ForegroundText="light" BackgroundColor="#464646" ToastCapable="false">
         <DefaultTile ShowName="logoOnly" ShortName="WordFlip" />
         <SplashScreen Image="logowide.jpg" />
         <InitialRotationPreference>
@@ -24,7 +24,4 @@
       </VisualElements>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
 </Package>

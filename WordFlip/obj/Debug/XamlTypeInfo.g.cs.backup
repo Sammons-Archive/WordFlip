@@ -118,7 +118,9 @@ namespace WordFlip.WordFlip_XamlTypeInfo
 
         private object Activate_2_MainPage() { return new global::WordFlip.MainPage(); }
 
-        private object Activate_3_ResultPage() { return new global::WordFlip.ResultPage(); }
+        private object Activate_3_PrivacyPolicy() { return new global::WordFlip.PrivacyPolicy(); }
+
+        private object Activate_4_ResultPage() { return new global::WordFlip.ResultPage(); }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
@@ -154,9 +156,15 @@ namespace WordFlip.WordFlip_XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "WordFlip.PrivacyPolicy":
+                userType = new global::WordFlip.WordFlip_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::WordFlip.PrivacyPolicy), GetXamlTypeByName("WordFlip.Common.LayoutAwarePage"));
+                userType.Activator = Activate_3_PrivacyPolicy;
+                xamlType = userType;
+                break;
+
             case "WordFlip.ResultPage":
                 userType = new global::WordFlip.WordFlip_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::WordFlip.ResultPage), GetXamlTypeByName("WordFlip.Common.LayoutAwarePage"));
-                userType.Activator = Activate_3_ResultPage;
+                userType.Activator = Activate_4_ResultPage;
                 xamlType = userType;
                 break;
 

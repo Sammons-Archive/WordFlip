@@ -62,6 +62,9 @@
     <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\PrivacyPolicy.xaml">
+      <PackagePath>PrivacyPolicy.xaml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\ResultPage.xaml">
       <PackagePath>ResultPage.xaml</PackagePath>
     </AppxPackagedFile>
