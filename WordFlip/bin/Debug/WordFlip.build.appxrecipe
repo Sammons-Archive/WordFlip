@@ -7,68 +7,68 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\WordFlip.exe">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\WordFlip.exe">
       <PackagePath>WordFlip.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\WordFlip.pdb">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\WordFlip.pdb">
       <PackagePath>WordFlip.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\infl">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\infl">
       <PackagePath>infl</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\Assets\Logo.png">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\logo2.jpg">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\logo2.jpg">
       <PackagePath>logo2.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\logo3.jpg">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\logo3.jpg">
       <PackagePath>logo3.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\logo4.jpg">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\logo4.jpg">
       <PackagePath>logo4.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\logowide.jpg">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\logowide.jpg">
       <PackagePath>logowide.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\App.xaml">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\AboutPage.xaml">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\AboutPage.xaml">
       <PackagePath>AboutPage.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\MainPage.xaml">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\PrivacyPolicy.xaml">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\PrivacyPolicy.xaml">
       <PackagePath>PrivacyPolicy.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\ResultPage.xaml">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\ResultPage.xaml">
       <PackagePath>ResultPage.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\WordFlip\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\RegUser\Utilities\Dropbox\ScratchWork\VisualStudio\WordFlip\WordFlip\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -198,7 +198,7 @@
                              TextWrapping="Wrap" VerticalAlignment="Top" Width="408" FontSize="64" Text="Enter Here"
                                                              />
                     <TextBlock x:Name="PageTitleText" HorizontalAlignment="Left" Height="70" Margin="241,0,0,0" TextWrapping="Wrap"
-                               Text="Word Flip!" VerticalAlignment="Top" Width="302" FontSize="48" />
+                               Text="WordFlip!" VerticalAlignment="Top" Width="302" FontSize="48" />
                     <TextBlock x:Name="InstructionsText" HorizontalAlignment="Left" Height="20" Margin="0,76,0,0" TextWrapping="Wrap"
                                Text="Enter a word (names work too!) and find out what else can be spelled with it's letters:"
                                VerticalAlignment="Top" Width="843" FontSize="16" />
