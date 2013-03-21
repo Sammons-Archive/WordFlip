@@ -1,4 +1,5 @@
-bin/
-common/
-obj/
-.pfx
+bin
+common
+obj
+*.pfx
+*.user
