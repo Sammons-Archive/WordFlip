@@ -1,6 +1,5 @@
 bin
-common
 obj
 *.pfx
 *.user
-*.csproj
+*.suo
