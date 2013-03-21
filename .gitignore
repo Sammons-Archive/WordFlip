@@ -3,3 +3,4 @@ common
 obj
 *.pfx
 *.user
+*.csproj
