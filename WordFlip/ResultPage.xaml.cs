@@ -32,8 +32,10 @@ namespace WordFlip
         protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
             if (navigationParameter != null)
-            {
-                string[] words = ((List<string>) navigationParameter).ToArray();
+            {// I recognize how terribly this is done, but I don't lose sleep over it
+             // this code just sets the text blocks to the list of words
+                string[] words = new string[((HashSet<string>)navigationParameter).Count];
+                ((HashSet<string>)navigationParameter).CopyTo(words);
                 Array.Resize(ref words, 5);
                 const string none = "";
                 if (words[0] != null) LeftText1.Text = RightText1.Text = "1 " + words[0];
@@ -47,7 +49,7 @@ namespace WordFlip
                 if (words[4] != null) LeftText5.Text = RightText5.Text = "5 " + words[4];
                 else LeftText5.Text = RightText5.Text = none;
                 if (words[0] == null)
-                {
+                {//but if the list is empty set everything to nothing found
                     LeftText1.Text =
                         RightText1.Text =
                         LeftText2.Text =
@@ -70,6 +72,6 @@ namespace WordFlip
         /// <param name="pageState">An empty dictionary to be populated with serializable state.</param>
         protected override void SaveState(Dictionary<String, Object> pageState)
         {
-        }
+        }// save nothing
     }
 }

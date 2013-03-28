@@ -9,98 +9,80 @@ namespace WordFlip
 {
     internal class WordFinder
     {
-        private static readonly Dictionary<string, string> _contents = new Dictionary<string, string>();
+        private static readonly HashSet<string> _contents = new HashSet<string>();//declare hashset to hold dictionary of words
+        private HashSet<string> resultList;
 
         public WordFinder()
         {
-            Read();
+            ReadInDictionary();
         }
 
-        public async void Read()
+        public async void ReadInDictionary()//get the words that makeup the dictionary
         {
-            StorageFile file = await Package.Current.InstalledLocation.GetFileAsync(@"infl");
-            Stream stream = await file.OpenStreamForReadAsync();
+            StorageFile file = await Package.Current.InstalledLocation.GetFileAsync(@"infl");//get file
+            Stream stream = await file.OpenStreamForReadAsync();//open file
             var streamReader = new StreamReader(stream);
-            string contents = await streamReader.ReadToEndAsync();
-            string[] contentAry = contents.Split(" ".ToCharArray());
-            foreach (string str in contentAry.Where(str => !_contents.ContainsKey(str.ToLower())))
+            string contents = await streamReader.ReadToEndAsync();//read out file
+            string[] contentAry = contents.Split(",".ToCharArray());//seperate out words
+            foreach (string str in contentAry.Where(str => !_contents.Contains(str.ToLower())))//add each word to the hashset
             {
-                _contents.Add(str.ToLower(), str.ToLower());
+                if (str.Length < 2) continue;//single letters are not words so don't add them
+                var str_ = str.Replace("\r\n", "");
+                _contents.Add(str_.ToLower());
             }
         }
 
 
-        /*
-         This function reads the contents of the infl library, which contains all of the words
-         */
-
-        public static List<string> GetPerms(string entry)
+        public HashSet<string> GetPerms(string entry)//exposed function to get permuations that match -- calls pickwords
         {
-            //_contents = _contents.ToLower();
-            List<string> attemp = PickWords(entry);
-            return attemp;
+            PickWords(entry);
+            resultList.Remove(entry);
+            return resultList;
         }
 
-        private static List<string> PickWords(string input_)
+        private HashSet<string> PickWords(string input_)//function calls Permuation for the permutations with sme manipulations of the string that permutation can't do easily
         {
-            string input = input_;
-            input = input.Replace(" ", "");
-            var output = new List<string>();
-
-            while (output.ToArray().Length < 1 && input.Length > 2)
+            resultList = new HashSet<string>();//initalize resultList
+            var input = (input_.Replace(" ", "")).ToLower();//remove spaces from input just in case and bring the letters to lowercase
+            var output = Permutation(input);//calculate perms for whole word : note the permutation function adds words to the resultlist as it goes.
+            while (input.Length > 3)//not really worried about words < 2 chars long, for the other lengths work
             {
-                int last = 0;
-                Dictionary<int, string> list = EveryPerm(input, ref last);
-                output.AddRange(from key in list
-                                let stringTemp = key.Value.ToLower()
-                                where
-                                    _contents.ContainsKey(key.Value) && key.Value.Length > 2 && key.Value != input &&
-                                    !output.Contains(key.Value)
-                                select stringTemp);
-                input = input.Substring(1);
+                for (var i = 0; i < input.Length; i++)//iteratively remove each letter and run the permutation calculator
+                {
+                    var temp = input.Remove(i, 1);
+                    Permutation(temp);//calculate permutations for this sub-word
+                }
+               input = input.Remove(input.Length-1, 1);//chop off the last letter of the word -- reverse of what the actual permuation calculator does
+                                                       //to me this is a large reason forthe existence of this function (without this an entry like 'enter here' never returned 'enter'
             }
             return output;
         }
 
-        private static Dictionary<int, string> EveryPerm(string str, ref int last)
+        private HashSet<string> Permutation(string str)//actual permutation calculating function (recursive)
         {
-            Dictionary<int, string> results = Permutation(str, ref last);
-            for (int i = 0; i < str.Length; i++)
-            {
-                foreach (char ch in str.ToCharArray())
-                {
-                    Dictionary<int, string> result = Permutation(str.Replace(ch.ToString(), ""), ref last);
-                    foreach (var a in result)
-                    {
-                        results.Add(a.Key, a.Value);
-                    }
-                }
-                str = str.Replace(str[0].ToString(), "");
-            }
-            return results;
-        }
+            if (resultList.Count > 100) return resultList;//I think 100 is plenty
 
-        private static Dictionary<int, string> Permutation(string str, ref int last)
-        {
-            if (str.Length < 2)
+            if (str.Length < 2)//if str length is 1 just finish
             {
-                var ans = new Dictionary<int, string> {{last, str}};
-                last++;
+                var ans = new HashSet<string> { str };//list with just the input word in it, this will be a single char
                 return ans;
             }
 
-            Dictionary<int, string> perms = Permutation(str.Substring(1), ref last);
-            char ch = str[0];
-            var result = new Dictionary<int, string>();
-            foreach (var perm in perms)
+            HashSet<string> perms = Permutation(str.Substring(1));//chop the first letter and send off the next call
+            char ch = str[0];//get the first letter
+            var result = new HashSet<string>();//this is the result list
+            foreach (var perm in perms)//shuffle the first letter through each position in each word returned by previous calls
             {
-                for (int i = 0; i < perm.Value.Length + 1; i++)
+                for (int i = 0; i < perm.Length + 1; i++)
                 {
-                    result.Add(last, perm.Value.Substring(0, i) + ch + perm.Value.Substring(i));
-                    last++;
+                    var p = (perm.Substring(0, i) + ch + perm.Substring(i));//shuffle algorithm
+                    if (_contents.Contains(p) && !resultList.Contains(p) &&p.Length>2) resultList.Add(p);//internal check-- if matches dictionary add it now
+                    if (!result.Contains(p)) result.Add(p);
                 }
             }
-            return result;
+            return result;//return the new list of perms to function caller
         }
+
+
     }
 }
